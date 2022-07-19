@@ -10,7 +10,6 @@ import "strings"
 type FuncFlag uint8
 
 const (
-	FuncFlag_TOPFRAME = 1 << iota
 	FuncFlag_SPWRITE
 	FuncFlag_ASM
 )
@@ -58,7 +57,6 @@ var funcIDs = map[string]FuncID{
 	"handleAsyncEvent":   FuncID_handleAsyncEvent,
 	"main":               FuncID_runtime_main,
 	"mcall":              FuncID_mcall,
-	"morestack":          FuncID_morestack,
 	"mstart":             FuncID_mstart,
 	"panicwrap":          FuncID_panicwrap,
 	"runfinq":            FuncID_runfinq,
